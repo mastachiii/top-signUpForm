@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url(resources/fonts/Norse-Bold.otf);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #f9fafc;
+}
+
+main {
+  & div {
+    display: flex;
+  }
+}
+
+.half-one {
+  position: relative;
+  height: calc(200rem / 16);
+  background-color: #000000;
+  font-family: "Norse Bold", system-ui;
+  font-size: calc(80rem / 16);
+
+  & .black-bg {
+    position: absolute;
+    width: 100%;
+    height: 18vh;
+    top: calc(215rem / 16);
+    background-color: #000000;
+    opacity: 50%;
+  }
+  & .odin-div {
+    display: flex;
+    position: absolute;
+    top: calc(160rem / 16);
+    left: 25%;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: inherit;
+  }
+}
+
+.leafy-bg {
+  width: calc(500rem / 16);
+  height: 100vh;
+}
+
+.odin-container {
+  background-color: #000000;
+}
+
+.odin-logo {
+  width: calc(90rem / 16);
+  height: calc(105rem / 16);
+}
+
+.half-two {
+  display: flex;
+  flex-direction: column;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  & > div {
+    padding: calc(50rem / 16);
+    justify-content: center;
+    margin-top: 5vh;
+    width: calc(650rem / 16);
+    flex-direction: column;
+    font-size: calc(20rem / 16);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-weight: 620;
+  }
+  & p {
+    margin: calc(20rem / 16);
+  }
+
+  & p:nth-child(2) {
+    margin-top: calc(10rem / 16);
+  }
+
+  form {
+    display: flex;
+    width: calc(1030rem / 16);
+    height: calc(200rem / 16);
+    margin-left: calc(70rem / 16);
+    gap: calc(20rem / 16);
+  }
+
+  form div:nth-child(2) {
+    margin-left: calc(165rem / 16);
+  }
+
+  .form-container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+    font-size: calc(30rem / 16);
+    background: #ffffff;
+    box-shadow: 0px 1px 5px black;
+  }
+
+  .form-container > p {
+    margin-left: calc(68rem / 16);
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    font-size: calc(10rem / 16);
+    letter-spacing: calc(1.5rem / 16);
+  }
+
+  input {
+    width: calc(250rem / 16);
+    height: calc(20rem / 16);
+    border-radius: calc(3rem / 16);
+    border: solid 1px #e5e7eb;
+    margin: calc(4rem / 16) 0 calc(20rem / 16);
+    font-size: calc(15rem / 16);
+    text-align: left;
+  }
+
+  input:focus{
+    outline: 0;
+    border:solid 2px #3268a8;
+    box-shadow: 1px 0px 1px #000000;
+  }
+
+  input:invalid{
+    border: solid 2px #cf0408;
+  }
+
+  button {
+    width: calc(170rem / 16);
+    height: calc(50rem / 16);
+    margin: calc(30rem / 16) 0 0 calc(65rem / 16);
+    font-size: calc(16rem / 16);
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #596d48;
+    border: solid 1px transparent;
+    border-radius: calc(10rem / 16);
+  }
+
+  & > p {
+    font-weight: 520;
+    margin: calc(25rem / 16) 0 0 calc(65rem / 16);
+  }
+
+  a {
+    text-decoration: none;
+    color: #596d48;
+  }
+}
